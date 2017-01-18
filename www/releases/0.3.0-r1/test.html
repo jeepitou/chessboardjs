@@ -95,9 +95,28 @@
 		</script>
 	</head>
 	<body>
-		<div id="cont">
-			<div id="board" width="400">
+			<h2>test page</h2>
+			<h3>Forked chessboard.js 0.3.0 with Annotation Overlay</h3>
+			<h4>info</h4>
+			<p>pass 'overlay: true' to cfg when initialising board</p>
+			<p>Adds the following methods:</p>
+				<ul>
+					<li>.addArrowAnnotation(source_square,target_square)</li>
+					<li>.removeArrowAnnotation(source_square,target_square)</li>
+					<li>.clearAnnotations()</li>
+				</ul>
+			<h3>demo</h3>
+				<p>The following board will highlight available moves of a peice with arrows
+				while hovering with mouse:</p>
+			<div id="board_container" width="400px">
+				<div id="board" width="400px"></div>
 			</div>
-		</div>
+			<h3>todo</h3>
+			<ul>
+				<li>browser detection for SVG support / graceful degredation</li>
+				<li>support for multiple colours / styles</li>
+				<li>other annotations (e.g. text, outlines)</li>
+				<li>offer as plugin for vanilla chessboard.js??</li>
+			</ul>
 	</body>
 </html>
